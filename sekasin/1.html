@@ -34,25 +34,23 @@
  
 </div>
 <div class=center>
-	
+
 <button id="edel" class="arial btn" onclick="../sekasin/1.html">Edellinen</button>
 <button id="rand "class="arial btn" onclick="seka()">Satunnainen</button>
 <button id="seur" class="arial btn" onclick="../sekasin/2.html">Seuraava</button>
-	
-<script src="..skriptej.js"></script>
-	
-<script>
-</script>	
 
+<script>
+function seka() {
+  location.replace("../sekasin/redirect")
+}
+</script>
+	
 <script type="text/javascript">
     document.getElementById("edel").onclick = function () {
         location.href = "../sekasin/1.html";
     };
     document.getElementById("seur").onclick = function () {
         location.href = "../sekasin/2.html";
-    };
-    document.getElementById("rand").onclick = function () {
-        location.href = "..redirect.html";
     };
 </script>
 
