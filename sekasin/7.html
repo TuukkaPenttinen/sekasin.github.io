@@ -1,0 +1,81 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../index.css">
+<html>
+
+<head>
+
+<title>sekasin</title>
+
+<style>
+</style>
+
+<link rel="icon" type="image/vnd.microsoft.icon"
+     href="..image/favicon.ico" />
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+<br/>
+<br/>
+<br/>
+<div class=box style="margin:0 auto;">
+
+<video width 1280 height 720 controls autoplay>
+	<source src="../video/kekkonen.mp4" type="video/mp4">
+</video>
+
+<a href="../video/kekkonen.mp4" download>Lataa</a>
+ 
+</div>
+<div class=center>
+
+<button id="edel" class="arial btn" onclick="../sekasin/1.html">Edellinen</button>
+<button class="arial btn" onclick="random()">Satunnainen</button>
+<button id="seur" class="arial btn" onclick="../sekasin/3.html">Seuraava</button>
+
+
+<script type="text/javascript">
+    document.getElementById("edel").onclick = function () {
+        location.href = "../sekasin/6.html";
+    };
+    document.getElementById("seur").onclick = function () {
+        location.href = "../sekasin/8.html";
+    };
+</script>
+
+
+</div>
+
+<script type="text/javascript">
+<!--
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "/sekasin/1.html";
+links[1] = "/sekasin/2.html";
+links[2] = "/sekasin/3.html";
+links[3] = "/sekasin/4.html";
+links[4] = "/sekasin/5.html";
+links[5] = "/sekasin/6.html";
+links[6] = "/sekasin/8.html";
+links[7] = "/sekasin/9.html";
+links[8] = "/sekasin/10.html";
+links[9] = "/sekasin/11.html";
+links[10] = "/sekasin/12.html";
+links[11] = "/sekasin/13.html";
+
+function random() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
+}
+//-->
+</script>
+
+</body>
+
+</html>
