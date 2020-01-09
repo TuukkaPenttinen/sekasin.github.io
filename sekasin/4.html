@@ -35,9 +35,14 @@
 <div class=center>
 
 <button id="edel" class="arial btn" onclick="../sekasin/1.html">Edellinen</button>
-<button id="rand "class="arial btn" onclick="..redirect.html">Satunnainen</button>
+<button id="rand "class="arial btn" onclick="seka()">Satunnainen</button>
 <button id="seur" class="arial btn" onclick="../sekasin/2.html">Seuraava</button>
 
+<script>
+function seka() {
+  location.replace("../sekasin/redirect")
+}
+</script>
 
 <script type="text/javascript">
     document.getElementById("edel").onclick = function () {
@@ -45,9 +50,6 @@
     };
     document.getElementById("seur").onclick = function () {
         location.href = "../sekasin/5.html";
-    };
-    document.getElementById("rand").onclick = function () {
-        location.href = "..redirect.html";
     };
 </script>
 
