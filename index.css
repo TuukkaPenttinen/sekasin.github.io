@@ -19,9 +19,6 @@ body {
  h1 {
 		font-size:36;
 }
-img {
-		pointer-events: none
-}
 .arial {
 	font-family:Arial;
 }
